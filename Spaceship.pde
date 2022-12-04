@@ -20,9 +20,18 @@ class Spaceship extends Floater {
     myCenterY = (int)(Math.random()*500);
     myPointDirection = (Math.random()*360);
   }
+  
   public void halt() {
     myXspeed = 0;
     myYspeed = 0;
+  }
+  
+    public double getMyX() {
+    return myCenterX;
+  }
+  
+  public double getMyY() {
+    return myCenterY;
   }
   
 }
