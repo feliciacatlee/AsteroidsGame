@@ -18,17 +18,11 @@ class Asteroid extends Floater {
     omega = (Math.random()*16 - 8);
   }
   
-  public double getOmega() {
-    return omega;
-  }
+  public double getOmega() {return omega;}
   
-  public double getMyX() {
-    return myCenterX;
-  }
+  public double getCenterX() {return myCenterX;}
   
-  public double getMyY() {
-    return myCenterY;
-  }
+  public double getCenterY() {return myCenterY;}
   
   public void move() {
     turn(getOmega());
